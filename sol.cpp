@@ -19,7 +19,7 @@ int main() {
 				tmp = a[i] * a[j];
 				sum = 0;
 				while (tmp != 0) {
-					sum = tmp % 10 + sum;
+					sum += tmp % 10;
 					tmp /= 10;
 				}
 				if (sum > mx) {
